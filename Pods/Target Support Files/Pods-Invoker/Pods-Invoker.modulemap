@@ -1,0 +1,6 @@
+framework module Pods_Invoker {
+  umbrella header "Pods-Invoker-umbrella.h"
+
+  export *
+  module * { export * }
+}
