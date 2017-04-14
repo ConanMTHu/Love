@@ -8,6 +8,15 @@
 
 import UIKit
 
+// MARK: - 自身业务
+extension UIViewController {
+//    public func open(to vc: UIViewController.Type) {
+//        let storyboardID = String(describing: vc)
+//        let viewController = UIStoryboard(name: "Root", bundle: nil).instantiateViewController(withIdentifier: storyboardID)
+//        
+//    }
+}
+
 // MARK: - flow
 extension UIViewController {
     public func push(to vc: UIViewController, animated: Bool = true) {
