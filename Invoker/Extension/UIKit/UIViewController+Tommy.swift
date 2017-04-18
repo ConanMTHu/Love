@@ -11,9 +11,9 @@ import UIKit
 public enum ViewControllerJumpTargetStyle {
     case push
     case pop
+    case popTo
     case present
     case dismiss
-    
 }
 
 // MARK: - 自身业务
@@ -21,7 +21,16 @@ public extension UIViewController {
     public func open(action: ViewControllerJumpTargetStyle = .push, vc: UIViewController.Type, param: [String: Any]? = nil) {
         let storyboardID = String(describing: vc)
         let viewController = UIStoryboard(name: "Root", bundle: nil).instantiateViewController(withIdentifier: storyboardID)
-        viewController.param = param ?? [:]
+        viewController.param = param
+        switch action {
+        case .push:
+            push(to: viewController)
+        case .popTo: print("")
+        case .present: print("")
+        case .dismiss: print("")
+        default:
+            popVC()
+        }
     }
 }
 
@@ -32,13 +41,13 @@ public extension UIViewController {
         /// ...其他Key声明
     }
     
-    var param: [String: Any] {
+    var param: [String: Any]? {
         set {
             objc_setAssociatedObject(self, UIViewController.RuntimeKey.paramKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
         
         get {
-            return  objc_getAssociatedObject(self, UIViewController.RuntimeKey.paramKey) as! [String : Any]
+            return  objc_getAssociatedObject(self, UIViewController.RuntimeKey.paramKey) as? [String : Any]
         }
     }
 }
@@ -51,6 +60,10 @@ extension UIViewController {
     
     public func popVC(animated: Bool = true) {
         _ = navigationController?.popViewController(animated: animated)
+    }
+    
+    public func popVC(to vc: UIViewController, animated: Bool = true) {
+        _ = navigationController?.popToViewController(vc, animated: animated)
     }
     
     public func present(to vc: UIViewController, animated: Bool = true) {

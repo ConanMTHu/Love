@@ -8,5 +8,4 @@ target ‘Invoker’ do
     pod 'SwiftyUserDefaults'
     pod 'HandyJSON', '~> 1.6.1'
     pod 'Kingfisher', '~> 3.0'
-    pod 'XCGLogger', '~> 5.0.1'
 end

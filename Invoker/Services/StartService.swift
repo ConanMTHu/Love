@@ -10,11 +10,6 @@ import UIKit
 
 extension AppDelegate {
     func startLoad() {
-        // app外观
-        
-        UIApplication.shared.statusBarStyle = .lightContent
-        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
-        
         // TODO: app服务器环境(上线的时候记得修改这里)
         Defaults[.environmentStatus] = .developer
         
