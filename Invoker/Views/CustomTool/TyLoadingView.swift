@@ -33,7 +33,7 @@ class TyLoadingView: UIView {
         self.addSubview(animateView)
     }
     
-    static func show(message msg: String = "我乃闪耀\n  的知识灯塔") {
+    static func show(message msg: String = "吾乃闪耀\n  的知识灯塔") {
         let loadingView = TyLoadingView(frame: CGRect(x: 0, y: 0, width: App.screenWidth, height: App.screenHeight))
         loadingView.tag = 9999
         loadingView.setUpAnimateView(message: msg)
