@@ -13,7 +13,17 @@ class RootTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tabBar.tintColor = UIColor.black
+        
+        guard let vcList = self.viewControllers else {
+            return
+        }
+        
+        let billVC = vcList[0]
+        billVC.tabBarItem.selectedImage = UIImage(named: "tabbar_accountbook_highlight")?.withRenderingMode(.alwaysOriginal)
+        
+        let mineVC = vcList[1]
+        mineVC.tabBarItem.selectedImage = UIImage(named: "tabbar_mine_highlight")?.withRenderingMode(.alwaysOriginal)
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +31,5 @@ class RootTabBarController: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

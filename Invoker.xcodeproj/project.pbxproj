@@ -45,6 +45,10 @@
 		A78257CD1EA0A2A600DA65FA /* UIViewController+Tommy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78257BB1EA0A2A600DA65FA /* UIViewController+Tommy.swift */; };
 		A78257D11EA0A48200DA65FA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78257D01EA0A48200DA65FA /* MainViewController.swift */; };
 		A78257D31EA0AB9B00DA65FA /* BlockButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78257D21EA0AB9B00DA65FA /* BlockButton.swift */; };
+		A7AD6A131EA5C26D008859D4 /* AccountBookMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD6A121EA5C26D008859D4 /* AccountBookMainViewController.swift */; };
+		A7AD6A151EA5C2EB008859D4 /* AccountBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AD6A141EA5C2EB008859D4 /* AccountBook.storyboard */; };
+		A7AD6A181EA5FF9A008859D4 /* MineMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD6A171EA5FF9A008859D4 /* MineMainViewController.swift */; };
+		A7AD6A1A1EA5FFEE008859D4 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AD6A191EA5FFEE008859D4 /* Mine.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +115,10 @@
 		A78257BB1EA0A2A600DA65FA /* UIViewController+Tommy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Tommy.swift"; sourceTree = "<group>"; };
 		A78257D01EA0A48200DA65FA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A78257D21EA0AB9B00DA65FA /* BlockButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockButton.swift; sourceTree = "<group>"; };
+		A7AD6A121EA5C26D008859D4 /* AccountBookMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountBookMainViewController.swift; sourceTree = "<group>"; };
+		A7AD6A141EA5C2EB008859D4 /* AccountBook.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AccountBook.storyboard; sourceTree = "<group>"; };
+		A7AD6A171EA5FF9A008859D4 /* MineMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineMainViewController.swift; sourceTree = "<group>"; };
+		A7AD6A191EA5FFEE008859D4 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +280,8 @@
 			isa = PBXGroup;
 			children = (
 				A78257CF1EA0A45400DA65FA /* Root */,
+				A7AD6A111EA5C187008859D4 /* AccountBook */,
+				A7AD6A161EA5FF8E008859D4 /* Mine */,
 				A78257CE1EA0A45100DA65FA /* Main */,
 			);
 			path = ViewControllers;
@@ -332,6 +342,24 @@
 				A78257541EA068D000DA65FA /* Root.storyboard */,
 			);
 			name = Root;
+			sourceTree = "<group>";
+		};
+		A7AD6A111EA5C187008859D4 /* AccountBook */ = {
+			isa = PBXGroup;
+			children = (
+				A7AD6A121EA5C26D008859D4 /* AccountBookMainViewController.swift */,
+				A7AD6A141EA5C2EB008859D4 /* AccountBook.storyboard */,
+			);
+			path = AccountBook;
+			sourceTree = "<group>";
+		};
+		A7AD6A161EA5FF8E008859D4 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				A7AD6A171EA5FF9A008859D4 /* MineMainViewController.swift */,
+				A7AD6A191EA5FFEE008859D4 /* Mine.storyboard */,
+			);
+			path = Mine;
 			sourceTree = "<group>";
 		};
 		E7B7CF34B96E0D6C25007308 /* Pods */ = {
@@ -462,6 +490,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A78256EB1E9F1B1500DA65FA /* LaunchScreen.storyboard in Resources */,
+				A7AD6A151EA5C2EB008859D4 /* AccountBook.storyboard in Resources */,
+				A7AD6A1A1EA5FFEE008859D4 /* Mine.storyboard in Resources */,
 				A78256E81E9F1B1500DA65FA /* Assets.xcassets in Resources */,
 				A78257971EA068D000DA65FA /* Root.storyboard in Resources */,
 			);
@@ -551,8 +581,10 @@
 				A78257C31EA0A2A600DA65FA /* Timer+Tommy.swift in Sources */,
 				A78257A21EA068D000DA65FA /* TyLoadingView.swift in Sources */,
 				A78257CB1EA0A2A600DA65FA /* UITableView+Tommy.swift in Sources */,
+				A7AD6A131EA5C26D008859D4 /* AccountBookMainViewController.swift in Sources */,
 				A782577D1EA068D000DA65FA /* TyAlertHUD.swift in Sources */,
 				A78257CC1EA0A2A600DA65FA /* UIView+Tommy.swift in Sources */,
+				A7AD6A181EA5FF9A008859D4 /* MineMainViewController.swift in Sources */,
 				A78257CA1EA0A2A600DA65FA /* UIStoryBoard+Tommy.swift in Sources */,
 				A78257C81EA0A2A600DA65FA /* UIDeviceExtensions.swift in Sources */,
 				A78257D31EA0AB9B00DA65FA /* BlockButton.swift in Sources */,
@@ -717,6 +749,7 @@
 				INFOPLIST_FILE = Invoker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tommy.Invoker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;

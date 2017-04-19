@@ -23,6 +23,5 @@ public extension UIStoryboard {
 
 public enum StoryboardName: String {
     case root = "Root"
-    case main = "MainPage"
 }
 

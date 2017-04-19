@@ -8,7 +8,7 @@
 
 import UIKit
 
-public enum ViewControllerJumpTargetStyle {
+enum ViewControllerJumpTargetStyle {
     case push
     case pop
     case popTo
@@ -16,18 +16,21 @@ public enum ViewControllerJumpTargetStyle {
     case dismiss
 }
 
-// MARK: - 自身业务
-public extension UIViewController {
-    public func open(action: ViewControllerJumpTargetStyle = .push, vc: UIViewController.Type, param: [String: Any]? = nil) {
+// MARK: - 跳转(其中的"Root"根据不同项目的 根 storyboard 来定)
+extension UIViewController {
+     func open(action: ViewControllerJumpTargetStyle = .push, vc: UIViewController.Type, param: [String: Any]? = nil) {
         let storyboardID = String(describing: vc)
         let viewController = UIStoryboard(name: "Root", bundle: nil).instantiateViewController(withIdentifier: storyboardID)
         viewController.param = param
         switch action {
         case .push:
             push(to: viewController)
-        case .popTo: print("")
-        case .present: print("")
-        case .dismiss: print("")
+        case .popTo:
+            popVC(to: viewController)
+        case .present:
+            present(to: viewController)
+        case .dismiss:
+            dismissVC(completion: nil)
         default:
             popVC()
         }
@@ -35,7 +38,7 @@ public extension UIViewController {
 }
 
 // MARK: - vc 之间的跳转传值通过一个 Dic 来实现
-public extension UIViewController {
+extension UIViewController {
     private struct RuntimeKey {
         static let paramKey = UnsafeRawPointer.init(bitPattern: "paramKey".hashValue)
         /// ...其他Key声明
