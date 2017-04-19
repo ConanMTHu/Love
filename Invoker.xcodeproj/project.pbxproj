@@ -49,6 +49,7 @@
 		A7AD6A1A1EA5FFEE008859D4 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AD6A191EA5FFEE008859D4 /* Mine.storyboard */; };
 		A7AD6A1F1EA6F5FE008859D4 /* TyLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD6A1D1EA6F5FE008859D4 /* TyLoadingView.swift */; };
 		A7AD6A201EA6F5FE008859D4 /* TyPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD6A1E1EA6F5FE008859D4 /* TyPlaceholderView.swift */; };
+		A7AD6A221EA70A0A008859D4 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD6A211EA70A0A008859D4 /* PieChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,7 @@
 		A7AD6A191EA5FFEE008859D4 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
 		A7AD6A1D1EA6F5FE008859D4 /* TyLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TyLoadingView.swift; sourceTree = "<group>"; };
 		A7AD6A1E1EA6F5FE008859D4 /* TyPlaceholderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TyPlaceholderView.swift; sourceTree = "<group>"; };
+		A7AD6A211EA70A0A008859D4 /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 			children = (
 				A782570E1EA068D000DA65FA /* Base */,
 				A782574C1EA068D000DA65FA /* ViewControllers */,
+				A78257561EA068D000DA65FA /* Views */,
 				A78257111EA068D000DA65FA /* Extension */,
 				A78257241EA068D000DA65FA /* Models */,
 				A78257251EA068D000DA65FA /* Protocol */,
@@ -181,7 +184,6 @@
 				A78257291EA068D000DA65FA /* Services */,
 				A782572E1EA068D000DA65FA /* Utils */,
 				A78257321EA068D000DA65FA /* Venders */,
-				A78257561EA068D000DA65FA /* Views */,
 				A78256E01E9F1B1500DA65FA /* AppDelegate.swift */,
 				A78256E71E9F1B1500DA65FA /* Assets.xcassets */,
 				A78256E91E9F1B1500DA65FA /* LaunchScreen.storyboard */,
@@ -365,6 +367,7 @@
 		A7AD6A1B1EA6F579008859D4 /* Chart */ = {
 			isa = PBXGroup;
 			children = (
+				A7AD6A211EA70A0A008859D4 /* PieChartView.swift */,
 			);
 			path = Chart;
 			sourceTree = "<group>";
@@ -603,6 +606,7 @@
 				A7AD6A181EA5FF9A008859D4 /* MineMainViewController.swift in Sources */,
 				A78257CA1EA0A2A600DA65FA /* UIStoryBoard+Tommy.swift in Sources */,
 				A78257C81EA0A2A600DA65FA /* UIDeviceExtensions.swift in Sources */,
+				A7AD6A221EA70A0A008859D4 /* PieChartView.swift in Sources */,
 				A78257D31EA0AB9B00DA65FA /* BlockButton.swift in Sources */,
 				A78257BC1EA0A2A600DA65FA /* Array+Tommy.swift in Sources */,
 				A78257BE1EA0A2A600DA65FA /* Date+Tommy.swift in Sources */,

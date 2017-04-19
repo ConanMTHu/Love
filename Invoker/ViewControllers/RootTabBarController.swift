@@ -13,7 +13,7 @@ class RootTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tabBar.tintColor = UIColor.black
+        tabBar.tintColor = .black
         
         guard let vcList = self.viewControllers else {
             return

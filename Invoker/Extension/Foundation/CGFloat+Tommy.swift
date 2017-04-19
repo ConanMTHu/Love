@@ -9,7 +9,7 @@
 import UIKit
 
 // MARK: - 角度与弧度之前的转换关系
-extension CGFloat {
+public extension CGFloat {
     
     public func degreesToRadians() -> CGFloat {
         return (.pi * self) / 180.0

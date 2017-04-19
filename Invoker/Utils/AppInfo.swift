@@ -6,6 +6,8 @@
 //  Copyright © 2016年 Tommy. All rights reserved.
 //
 
+//  https://github.com/raywenderlich/swift-style-guide  RAY 的 Swift 书写规范
+
 import Foundation
 import UIKit
 
