@@ -10,7 +10,7 @@ import UIKit
 
 class PieChartView: UIView {
     // 半径
-    let radius: CGFloat = 120.0
+    let radius: CGFloat = 80.0
     let datas: [CGFloat] = [0.4,0.3,0.2,0.1]
     let colors: [UIColor] = [.orange,.red,.blue,.green]
     
@@ -21,6 +21,17 @@ class PieChartView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func drawLine(_ context: CGContext, startAngle: CGFloat, endAngle: CGFloat, color: UIColor, index: Int) {
+        // 每段弧度的中心弧度
+        let centerAngle = (startAngle + endAngle) / 2.0
+        // 对应小圆点的中心点
+        let smallCircleCenterX = center.x + (radius + 10) * cos(centerAngle)
+        let smallCircleCenterY = center.y + (radius + 10) * sin(centerAngle)
+        
+        // 折线的折点
+        let brokenLineX =
     }
   
     // Only override draw() if you perform custom drawing.
@@ -33,34 +44,39 @@ class PieChartView: UIView {
         
         // MARK: - 画饼图
         context.saveGState()
-        //context.setShadow(offset: CGSize(width: 0, height: 10), blur: 10)
-        var currentRadian:CGFloat = 0.0
+        // 偏转的弧度
+        var offsetRadian: CGFloat = 0.0
+        var startAngle: CGFloat = 0.0
         for (index,element) in datas.enumerated() {
-            // 每个数据对应的弧度
+            // 每个数据对应的角度
             let radian = element * 360.0
-            let startAngle = 0 + currentRadian
-            let endAngle = startAngle + radian
+            let endAngle = radian.degreesToRadians() + offsetRadian
+            offsetRadian += radian.degreesToRadians()
+            //let startAngle = 0 + currentRadian
+            //let endAngle = startAngle + radian
             context.setFillColor(colors[index].cgColor)
             
             context.move(to: center)
             // -90弧度的意思是从12点钟的方位开始画
-            context.addArc(center: center, radius: radius, startAngle: startAngle.degreesToRadians() - CGFloat.degreesToRadians(90.0), endAngle: endAngle.degreesToRadians() - CGFloat.degreesToRadians(90.0), clockwise: false)
+            context.addArc(center: center, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: false)
             context.fillPath()
             
-            currentRadian += radian
+            // MARK: - 画比例直线
+            drawLine(context, startAngle: startAngle, endAngle: endAngle, color: colors[index],index: index)
+            startAngle = endAngle
+            
         }
         context.restoreGState()
         
-        // MARK: - 画比例直线
         
-        
-        // MARK: - 画内圈
+        // MARK: - 画中心圆
         context.saveGState()
         context.move(to: center)
         context.setFillColor(UIColor.white.cgColor)
-        context.addArc(center: center, radius: radius/2.0, startAngle: 0.0, endAngle: 360, clockwise: false)
+        context.addArc(center: center, radius: radius/2.0, startAngle: 0.0, endAngle: CGFloat.degreesToRadians(360.0), clockwise: false)
         context.fillPath()
         context.restoreGState()
+        
         
         // MARK: - 画内圈数据
         context.saveGState()
@@ -69,8 +85,8 @@ class PieChartView: UIView {
         let style = NSMutableParagraphStyle()
         style.alignment = .center
         
-        text.draw(in: CGRect(origin: CGPoint(x:center.x-60,y:center.y-30), size: CGSize(width: 120, height: 120)), withAttributes: [
-            NSFontAttributeName: UIFont(name: "HelveticaNeue-Bold", size: 25.0)!,
+        text.draw(in: CGRect(origin: CGPoint(x:center.x-40,y:center.y-20), size: CGSize(width: 80, height: 80)), withAttributes: [
+            NSFontAttributeName: UIFont(name: "HelveticaNeue-Bold", size: 18.0)!,
             NSForegroundColorAttributeName: UIColor.red,
             NSParagraphStyleAttributeName: style])
         context.restoreGState()
