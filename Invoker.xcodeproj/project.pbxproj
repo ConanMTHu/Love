@@ -43,6 +43,7 @@
 		A78257CD1EA0A2A600DA65FA /* UIViewController+Tommy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78257BB1EA0A2A600DA65FA /* UIViewController+Tommy.swift */; };
 		A78257D11EA0A48200DA65FA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78257D01EA0A48200DA65FA /* MainViewController.swift */; };
 		A78257D31EA0AB9B00DA65FA /* BlockButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78257D21EA0AB9B00DA65FA /* BlockButton.swift */; };
+		A79596711EA892B0007FB3FB /* CountJumpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79596701EA892B0007FB3FB /* CountJumpView.swift */; };
 		A7AD6A131EA5C26D008859D4 /* AccountBookMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD6A121EA5C26D008859D4 /* AccountBookMainViewController.swift */; };
 		A7AD6A151EA5C2EB008859D4 /* AccountBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AD6A141EA5C2EB008859D4 /* AccountBook.storyboard */; };
 		A7AD6A181EA5FF9A008859D4 /* MineMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD6A171EA5FF9A008859D4 /* MineMainViewController.swift */; };
@@ -114,6 +115,7 @@
 		A78257BB1EA0A2A600DA65FA /* UIViewController+Tommy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Tommy.swift"; sourceTree = "<group>"; };
 		A78257D01EA0A48200DA65FA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A78257D21EA0AB9B00DA65FA /* BlockButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockButton.swift; sourceTree = "<group>"; };
+		A79596701EA892B0007FB3FB /* CountJumpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountJumpView.swift; sourceTree = "<group>"; };
 		A7AD6A121EA5C26D008859D4 /* AccountBookMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountBookMainViewController.swift; sourceTree = "<group>"; };
 		A7AD6A141EA5C2EB008859D4 /* AccountBook.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AccountBook.storyboard; sourceTree = "<group>"; };
 		A7AD6A171EA5FF9A008859D4 /* MineMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineMainViewController.swift; sourceTree = "<group>"; };
@@ -368,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				A7AD6A211EA70A0A008859D4 /* PieChartView.swift */,
+				A79596701EA892B0007FB3FB /* CountJumpView.swift */,
 			);
 			path = Chart;
 			sourceTree = "<group>";
@@ -615,6 +618,7 @@
 				A78257C61EA0A2A600DA65FA /* UIButton+Tommy.swift in Sources */,
 				A78257C71EA0A2A600DA65FA /* UIColor+Tommy.swift in Sources */,
 				A78257A51EA06A2A00DA65FA /* RootTabBarController.swift in Sources */,
+				A79596711EA892B0007FB3FB /* CountJumpView.swift in Sources */,
 				A78257C11EA0A2A600DA65FA /* NSAttributedString+Tommy.swift in Sources */,
 				A78256E11E9F1B1500DA65FA /* AppDelegate.swift in Sources */,
 				A78257631EA068D000DA65FA /* BaseViewController.swift in Sources */,

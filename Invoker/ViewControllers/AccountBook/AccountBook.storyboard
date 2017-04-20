@@ -19,14 +19,43 @@
                     <view key="view" contentMode="scaleToFill" id="K0E-97-y9O">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4Q-GV-Tyw">
+                                <rect key="frame" x="164" y="387" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="click:" destination="1wx-9e-3m2" eventType="touchUpInside" id="itr-zb-Frj"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="账本" image="tabbar_accountbook_default" id="Bmf-qH-SNP"/>
+                    <navigationItem key="navigationItem" title="账本" id="JKq-62-rSR"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zpo-4i-5dw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="406" y="-244"/>
+            <point key="canvasLocation" x="1344.8" y="-244.22788605697153"/>
+        </scene>
+        <!--账本-->
+        <scene sceneID="A2k-pd-Q0f">
+            <objects>
+                <navigationController storyboardIdentifier="AccountBookNC" automaticallyAdjustsScrollViewInsets="NO" id="pN8-gO-goj" customClass="BaseNavigationController" customModule="Invoker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="账本" image="tabbar_accountbook_default" id="Bmf-qH-SNP"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="brj-20-VBz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1wx-9e-3m2" kind="relationship" relationship="rootViewController" id="ads-JJ-PyK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2qU-hC-dSD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="604" y="-238"/>
         </scene>
     </scenes>
     <resources>

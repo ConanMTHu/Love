@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-623" y="-246"/>
         </scene>
-        <!--AccountBookMainViewController-->
+        <!--AccountBookNC-->
         <scene sceneID="iRf-47-oeN">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="AccountBookMainViewController" storyboardName="AccountBook" referencedIdentifier="AccountBookMainViewController" id="TLl-uj-9mz" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="AccountBook" referencedIdentifier="AccountBookNC" id="TLl-uj-9mz" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" id="QaW-hg-7xz"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NUn-5P-5JH" userLabel="First Responder" sceneMemberID="firstResponder"/>

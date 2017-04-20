@@ -24,7 +24,7 @@ class PieChartView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func drawLine(_ context: CGContext, startAngle: CGFloat, endAngle: CGFloat, color: UIColor, index: Int) {
+    private func drawLine(_ context: CGContext, startAngle: CGFloat, endAngle: CGFloat, color: UIColor, index: Int) {
         // 每段弧度的中心弧度
         let centerAngle = (startAngle + endAngle) / 2.0
         // 对应小圆点的中心点
