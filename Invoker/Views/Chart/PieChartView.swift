@@ -41,7 +41,7 @@ class PieChartView: UIView {
         lineLosePointY = smallCircleCenterY + 10.0*sin(centerAngle)
         
         // 数字:数值+比例
-        let sum = datas.reduce(0,{$0 + $1})
+        let sum = datas.reduce(0, +)
         let numberData = String.init(format: "%.1f(%.1f%%)",datas[index],CGFloat(datas[index])/sum*100) as NSString
         let numberSize = numberData.size(attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 10.0)])
         let textSize = textList[index].size(attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 12.0)])
@@ -127,7 +127,7 @@ class PieChartView: UIView {
         var offsetRadian: CGFloat = 0.0
         var startAngle: CGFloat = 0.0
         // 数值的总和
-        let sum = datas.reduce(0,{$0 + $1})
+        let sum = datas.reduce(0,+)
         for (index,element) in datas.enumerated() {
             // 每个数据对应的角度
             let radian = (element / sum) * 360.0

@@ -23,8 +23,7 @@ class AccountBookMainViewController: BaseViewController {
 //        earnLayer.backgroundColor = UIColor.black.cgColor
 //        earnLayer.alignmentMode = "center"
 //        view.layer.addSublayer(earnLayer)
-        
-        
+    
     }
 
     @IBAction func click(_ sender: UIButton) {

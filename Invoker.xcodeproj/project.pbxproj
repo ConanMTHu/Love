@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A432129AC66B81D07D9692A /* Pods_Invoker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7AC30AEE89A0BF5FDDC56A /* Pods_Invoker.framework */; };
+		A70843201EB2D8C7003F04BA /* UITabBarItem+Tommy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A708431F1EB2D8C7003F04BA /* UITabBarItem+Tommy.swift */; };
 		A78256E11E9F1B1500DA65FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78256E01E9F1B1500DA65FA /* AppDelegate.swift */; };
 		A78256E81E9F1B1500DA65FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A78256E71E9F1B1500DA65FA /* Assets.xcassets */; };
 		A78256EB1E9F1B1500DA65FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A78256E91E9F1B1500DA65FA /* LaunchScreen.storyboard */; };
@@ -74,6 +75,7 @@
 		1D7AC30AEE89A0BF5FDDC56A /* Pods_Invoker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Invoker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AEBA274BA00CAA74C058A11 /* Pods-Invoker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Invoker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Invoker/Pods-Invoker.release.xcconfig"; sourceTree = "<group>"; };
 		A6AA4E3B5EC6BCDBCC66FB37 /* Pods-Invoker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Invoker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Invoker/Pods-Invoker.debug.xcconfig"; sourceTree = "<group>"; };
+		A708431F1EB2D8C7003F04BA /* UITabBarItem+Tommy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+Tommy.swift"; sourceTree = "<group>"; };
 		A78256DD1E9F1B1500DA65FA /* Invoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Invoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A78256E01E9F1B1500DA65FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A78256E71E9F1B1500DA65FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 				A78257B71EA0A2A600DA65FA /* UIImage+Tommy.swift */,
 				A78257B91EA0A2A600DA65FA /* UITableView+Tommy.swift */,
 				A78257BA1EA0A2A600DA65FA /* UIView+Tommy.swift */,
+				A708431F1EB2D8C7003F04BA /* UITabBarItem+Tommy.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -624,6 +627,7 @@
 				A78257631EA068D000DA65FA /* BaseViewController.swift in Sources */,
 				A78257C91EA0A2A600DA65FA /* UIImage+Tommy.swift in Sources */,
 				A78257781EA068D000DA65FA /* ConstDataService.swift in Sources */,
+				A70843201EB2D8C7003F04BA /* UITabBarItem+Tommy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
